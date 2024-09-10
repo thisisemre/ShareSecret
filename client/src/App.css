@@ -1,0 +1,34 @@
+/* Uygulamanın genel arka planı */
+body {
+  background-color: #F0E68C; /* Açık sarımsı ton, eski kağıt görünümü */
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Tam ekranı kaplar */
+}
+
+.app-container {
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* Her bir bileşenin (NewSecret ve Secret) ana kutusunun üzerine etkili olur */
+.new-secret-container, .secret-container {
+  width: 100%;
+  margin: 0; /* İç içe geçmeyi önlemek için dışarıdan ek boşluk kaldırıldı */
+  padding: 20px;
+}
+
+/* İsteğe bağlı: Bileşenler arası boşluk */
+.new-secret-container + .secret-container {
+  margin-top: 20px;
+}
